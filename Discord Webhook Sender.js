@@ -1,10 +1,12 @@
-var xhr = new XMLHttpRequest();
-var url = '[WEBHOOK]';
-xhr.open('POST', url, true);
-xhr.setRequestHeader('Content-Type', 'application/json');
+document.addEventListener('DOMContentLoaded', function() {
+  var xhr = new XMLHttpRequest();
+  var url = '[WEBHOOK]';
+  xhr.open('POST', url, true);
+  xhr.setRequestHeader('Content-Type', 'application/json');
 
-var message = {
-  content: '[BERICHT]'
- };
+  var message = {
+    content: '[MESSAGE]'
+  };
 
-xhr.send(JSON.stringify(message));
+  xhr.send(JSON.stringify(message));
+})
